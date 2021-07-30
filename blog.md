@@ -7,7 +7,7 @@ permalink: /blog/
 
 {% for post in site.posts %}
 
-<a class="blog-post" href="{{ post.url }}">
+<div class="blog-post" href="{{ post.url }}">
 
 ## {{ post.title }}
   
@@ -18,6 +18,6 @@ permalink: /blog/
   
 > {{ post.excerpt }} 
   
-</a>
+</div>
 
 {% endfor %}
