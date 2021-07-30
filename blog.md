@@ -15,7 +15,7 @@ permalink: /blog/
 
   {% for category in post.categories %}
   <span class="blog-post-category">{{ category }}</span>
-  {$ endfor %}
+  {% endfor %}
   {% for tag in post.tags %}
   <span class="blog-post-tag">{{ tag }}</span>
   {% endfor %}
