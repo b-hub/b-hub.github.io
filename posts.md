@@ -10,15 +10,9 @@ description: ""
 
 _{{ post.date }}_
 
-{% for category in post.categories %}
-<span>{{ category }} </span>
-{% endfor %}
+{{ post.categories | join ", " }} | {{ post.tags | join ", " }}
 
-{% for tag in post.tags %}
-<span>{{ tag }} </span>
-{% endfor %}
-
-{{ post.excerpt }} 
+> {{ post.excerpt }} 
 
 <a href="{{ post.url }}">...read more</a>
 
