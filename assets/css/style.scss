@@ -2,3 +2,13 @@
 ---
 
 @import "{{ site.theme }}";
+
+.page-nav {
+  text-align: center;
+  padding: 10px; 
+}
+
+.page-nav a {
+  padding: 0px 16px;
+  text-decoration: none;
+}
