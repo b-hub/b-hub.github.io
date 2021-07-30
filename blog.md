@@ -13,12 +13,8 @@ permalink: /blog/
   
   <span class="blog-post-date">{{ post.date }}</span>
 
-  {% for category in post.categories %}
-  <span class="blog-post-category">{{ category }}</span>
-  {% endfor %}
-  {% for tag in post.tags %}
-  <span class="blog-post-tag">{{ tag }}</span>
-  {% endfor %}
+  {% for category in post.categories %}<span class="blog-post-category">{{ category }}</span>{% endfor %}
+  {% for tag in post.tags %}<span class="blog-post-tag">{{ tag }}</span>{% endfor %}
   
 > {{ post.excerpt }} 
   
