@@ -7,16 +7,18 @@ permalink: /blog/
 
 {% for post in site.posts %}
 
-<div class="blog-post" href="{{ post.url }}">
+<div class="blog-post">
 
-## {{ post.title }}
+  <h2 class="blog-post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
   
-  <span class="blog-post-date">{{ post.date }}</span>
+  <div class="blog-post-date">{{ post.date }}</div>
 
-  {% for category in post.categories %}<span class="blog-post-category">{{ category }}</span>{% endfor %}
-  {% for tag in post.tags %}<span class="blog-post-tag">{{ tag }}</span>{% endfor %}
-  
-> {{ post.excerpt }} 
+  <div class="blog-post-tags">
+    {% for category in post.categories %}<a class="blog-post-category">{{ category }}</a>{% endfor %}
+    {% for tag in post.tags %}<a class="blog-post-tag">{{ tag }}</a>{% endfor %}
+  </div>
+    
+  <div class="blog-post-excerpt">{{ post.excerpt }}</div>
   
 </div>
 
