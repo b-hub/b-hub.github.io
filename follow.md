@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Follow"
-description: "Get updates"
+description: "Follow my work and interests"
 permalink: "/follow/"
 ---
 
