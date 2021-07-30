@@ -8,10 +8,22 @@ description: ""
 
 ## {{ post.title }}
 
-{{ post.categories }}
+_{{ page.date }}_
 
-{{ post.tags }}
+{% for category in post.categories %}
 
-{{ post.excerpt }} <a href="{{ post.url }}">...read more</a>
+<span>{{ category }} </span>
+
+{% endfor %}
+
+{% for tag in post.tag %}
+
+{{ tag }}
+
+{% endfor %}
+
+{{ post.excerpt }} 
+
+<a href="{{ post.url }}">...read more</a>
 
 {% endfor %}
