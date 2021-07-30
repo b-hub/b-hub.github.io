@@ -3,6 +3,10 @@
 
 @import "{{ site.theme }}";
 
+.page-header {
+    padding: 2rem 6rem 1rem 6rem;
+}
+
 .page-nav {
   text-align: center;
   padding: 10px; 
