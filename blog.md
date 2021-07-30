@@ -7,14 +7,20 @@ permalink: /blog/
 
 {% for post in site.posts %}
 
-## {{ post.title }}
+<div class="blog-post">
 
-_{{ post.date }}_
+## {{ post.title }}
+  
+  <span class="blog-post-date">{{ post.date }}</span>
 
 {{ post.categories | join ", " }} | {{ post.tags | join ", " }}
 
 > {{ post.excerpt }} 
 
 <a href="{{ post.url }}">...read more</a>
+  
+</div>
 
 {% endfor %}
+
+{% render "test" %}
