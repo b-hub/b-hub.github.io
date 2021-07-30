@@ -8,18 +8,14 @@ description: ""
 
 ## {{ post.title }}
 
-_{{ page.date }}_
+_{{ post.date }}_
 
 {% for category in post.categories %}
-
 <span>{{ category }} </span>
-
 {% endfor %}
 
-{% for tag in post.tag %}
-
-{{ tag }}
-
+{% for tag in post.tags %}
+<span>{{ tag }} </span>
 {% endfor %}
 
 {{ post.excerpt }} 
