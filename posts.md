@@ -2,6 +2,7 @@
 layout: default
 title: "Posts"
 description: ""
+permalink: /posts/
 ---
 
 {% for post in site.posts %}
