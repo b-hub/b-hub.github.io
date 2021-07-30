@@ -18,7 +18,7 @@ permalink: /blog/
   {$ endfor %}
   {% for tag in post.tags %}
   <span class="blog-post-tag">{{ tag }}</span>
-  {$ endfor %}
+  {% endfor %}
   
 > {{ post.excerpt }} 
   
