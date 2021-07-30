@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "Posts"
-description: ""
-permalink: /posts/
+title: "Blog"
+description: "Projects, tips and newsletters"
+permalink: /blog/
 ---
 
 {% for post in site.posts %}
