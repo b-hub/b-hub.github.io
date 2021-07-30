@@ -4,10 +4,14 @@ title: "Posts"
 description: ""
 ---
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
+{% for post in site.posts %}
+
+## {{ post.title }}
+
+{{ post.categories }}
+
+{{ post.tags }}
+
+{{ post.excerpt }} <a href="{{ post.url }}">...read more</a>
+
+{% endfor %}
