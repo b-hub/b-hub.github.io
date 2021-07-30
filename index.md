@@ -1,8 +1,11 @@
 ---
 layout: default
+title: "Ben Magistris"
+description: "Software Developer"
 ---
 
-# Welcome
+
+## Welcome
 
 I am a Full-Stack Developer located in the UK with 5+ years industry experience, working full-time on public facing and internal web applications. I am pationate about what I do, so much so that in my spare time I find myself testing new technologies and project ideas. If you would like to know more, take a look at the [About](/about/) page.
 
