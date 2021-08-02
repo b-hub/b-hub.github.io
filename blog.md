@@ -11,7 +11,7 @@ permalink: /blog/
 
   <h2 class="blog-post-title">
     <a href="{{ post.url }}">{{ post.title }}</a>
-    <div class="blog-post-date">{{ post.date }}</div>
+    <div class="blog-post-date">{{ post.date | date: "%a, %b %d %Y" }}</div>
   </h2>
 
   <div class="blog-post-tags">
