@@ -26,7 +26,7 @@ Completing all the above steps will result in your repository having an updated 
 
 You can view the site by going to Environments -> github-pages -> View Deployment
 
-### Explaination
+### Explanation
 
 By creating a GitHub page, GitHub will automatically build your site using Jekyll, behind the scenes. [Jekyll](https://jekyllrb.com/) is a program which can build static pages from source files.
 
@@ -61,7 +61,7 @@ Custom layouts are defined in _layouts/layout_name.html and can use variables de
 
 [Posts](https://jekyllrb.com/docs/posts/) are listed in the _posts folder and can be referenced on a page by using `site.posts`
 
-You can write html and JavaScript as normal, even inside .md files. This includes embeding content with iframes.
+You can write html and JavaScript as normal, even inside .md files. This includes embedding content with iframes.
 
 Jekyll uses [Liquid](https://shopify.github.io/liquid/) as the templating language. GitHub pages (as of writing) only supports 4.0.3, so some of the features in v5 are unavailable.
 
