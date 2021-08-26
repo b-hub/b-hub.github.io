@@ -2,19 +2,19 @@
 layout: default
 title: "Faze Gallery Improvements"
 description: "Adding more information to the display"
-date: 2021-08-27 12:00:00 -0000
+date: 2021-08-26 12:00:00 -0000
 categories: projects faze
 tags: thumbsup
 excerpt_separator: <!--excerpt-->
 ---
 
-This month I have worked on improving the [faze gallery](https://b-faze.github.io/faze/) to give a better understanding of what the visualisation is representing. The change adds structure, tagging and a breakdown of the settings used to construct the image.
+The [faze gallery](https://b-faze.github.io/faze/) has been improved to give a better understanding of what the visualisation is representing. The change adds structure, tagging and a breakdown of the settings used to construct the image.
 
 <!--excerpt-->
 
  This work is part of the repository's [gallery info](https://github.com/b-faze/faze/milestone/2) milestone.
 
-## The New Structure
+# Structure Changes
 
  ![Initial gallery structure](/assets/images/faze-gallery-diagram-initial.png)
 
@@ -24,7 +24,7 @@ Initially, the gallery was simply organised into high-level albums which represe
 
  This allowed for styling pipeline and variation albums differently and in the case of the pipeline, including a link to the code on github.
 
- ### Pipeline
+ ## Pipeline
 
  A pipeline represents all of the steps taken to create the visualisation and can expose its own configuration settings to allow for variations.
 
@@ -52,7 +52,7 @@ ReversePipelineBuilder.Create()
     .LoadTree(DataId, treeDataProvider);
 ```
 
-### Variations
+## Variations
 
 A variation represents (generally) a specific configuration of a pipeline. However, the same variation may produce several images which have different configurations. This is most common for configurations supporting a depth setting, where an image is produced at each depth but the other settings remain the same.
 
