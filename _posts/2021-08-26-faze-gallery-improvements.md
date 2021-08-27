@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Faze Gallery Improvements"
-description: "Adding more information to the display"
+description: "Adding more information"
 date: 2021-08-26 12:00:00 -0000
 categories: projects faze
 tags: thumbsup
@@ -14,7 +14,7 @@ The [faze gallery](https://b-faze.github.io/faze/) has been improved to give a b
 
  This work is part of the repository's [gallery info](https://github.com/b-faze/faze/milestone/2) milestone.
 
-# Structure Changes
+# A New Structure
 
  ![Initial gallery structure](/assets/images/faze-gallery-diagram-initial.png)
 
@@ -24,7 +24,7 @@ Initially, the gallery was simply organised into high-level albums which represe
 
  This allowed for styling pipeline and variation albums differently and in the case of the pipeline, including a link to the code on github.
 
- ## Pipeline
+## Pipeline
 
  A pipeline represents all of the steps taken to create the visualisation and can expose its own configuration settings to allow for variations.
 
@@ -39,7 +39,7 @@ ReversePipelineBuilder.Create()
     .Build(() => state);
 ```
 
-Pipelines can also reference a `DataId` if collecting the data takes a while. E.g. for collecting statistical information from simulating millions of games. 
+Pipelines can also reference a `DataId`, if collecting the data takes a while. E.g. for collecting statistical information from simulating millions of games. 
 
 An example of a pipeline using a `DataId` is below or on [GitHub](https://github.com/b-faze/faze/blob/55354ea577aad7631b826b52d3a8ae8a6f46446b/src/examples/gallery/Faze.Examples.Gallery/Visualisations/EightQueensProblem/EightQueensProblemImagePipeline.cs).
 
@@ -52,12 +52,54 @@ ReversePipelineBuilder.Create()
     .LoadTree(DataId, treeDataProvider);
 ```
 
+... and the pipeline with corresponding `DataId` ([GitHub](https://github.com/b-faze/faze/blob/55354ea577aad7631b826b52d3a8ae8a6f46446b/src/examples/gallery/Faze.Examples.Gallery/Visualisations/EightQueensProblem/DataGenerators/EightQueensProblemExhaustiveDataPipeline.cs))
+
+```
+ReversePipelineBuilder.Create()
+    .SaveTree(dataId, treeDataProvider)
+    .Map(new EightQueensProblemSolutionTreeMapper(MaxEvaluationDepth))
+    .GameTree(new SquareTreeAdapter(BoardSize))
+    .Build(() => new PiecesBoardState(new PiecesBoardStateConfig(BoardSize, new QueenPiece(), onlySafeMoves: true)));
+```
+
+Currently, there is no link to a data pipeline from the gallery.
+
 ## Variations
+
+ <img src="/assets/images/8QP-var1.png" />
+ <img src="/assets/images/8QP-var3.png" />
 
 A variation represents (generally) a specific configuration of a pipeline. However, the same variation may produce several images which have different configurations. This is most common for configurations supporting a depth setting, where an image is produced at each depth but the other settings remain the same.
 
 Depending on the level of configuration a pipeline exposes, two variations may differ by superficial styling changes like border proportion or represent completely different information.
 
-By clicking an image's information button you are able to see a breakdown of the pipeline settings that was used to create it.
+The following bit of code illustrates how a variation is created. In this case, only the depth changes. See code on [GitHub](https://github.com/b-faze/faze/blob/55354ea577aad7631b826b52d3a8ae8a6f46446b/src/examples/gallery/Faze.Examples.Gallery/Visualisations/EightQueensProblem/EightQueensProblemVis.cs).
+
+```
+new GalleryItemMetadata<EightQueensProblemImagePipelineConfig>
+{
+    FileId = $"8 Queens Problem Solutions depth {depth}.png",
+    Album = Albums.EightQueensProblem,
+    PipelineId = EightQueensProblemImagePipeline.Id,
+    Variation = "Var 1",
+    Depth = depth,
+    Config = new EightQueensProblemImagePipelineConfig
+    {
+        TreeSize = 8,
+        ImageSize = 600,
+        MaxDepth = depth,
+        BlackUnavailableMoves = true,
+        BlackParentMoves = true
+    }
+};
+```
+
+By clicking an image's information button you are able to see a breakdown of the pipeline settings that was used to create it. The config section of the image information of created from the GalleryItemMetadata.Config property.
 
  ![Gallery Image Info](/assets/images/faze-gallery-img-info.png)
+
+ # Custom Metadata in thumbsup
+
+ [thumbsup](https://thumbsup.github.io/) only supports a predefined set of metadata properties on an image. These properties reflect information provided by a camera - E.g. location the image was taken. 
+ 
+ One option would be to use one of these known properties to set the data we want 
