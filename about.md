@@ -5,4 +5,4 @@ description: "Ben Magistris"
 permalink: /about/
 ---
 
-todo...
+Can't chat now, come back later!

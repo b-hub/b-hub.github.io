@@ -2,7 +2,7 @@
 layout: default
 title: "Faze Gallery Improvements"
 description: "Adding more information"
-date: 2021-08-26 12:00:00 -0000
+date: 2021-08-27 12:00:00 -0000
 categories: projects faze
 tags: thumbsup
 excerpt_separator: <!--excerpt-->
@@ -22,7 +22,13 @@ Initially, the gallery was simply organised into high-level albums which represe
 
  ![Gallery structure](/assets/images/faze-gallery-diagram.png)
 
- This allowed for styling pipeline and variation albums differently and in the case of the pipeline, including a link to the code on github.
+ Images are still shown for each album, but the new structure allowed for created sub-albums to group the pipeline and variations. It was also possible to change the styling/content depending on if the album was at game, pipeline or variation level.
+
+![Gallery Image Info](/assets/images/faze-gallery-album-game.png)
+
+# Breakdown
+
+In the following section I break down what a pipeline and variation is, in the context of the gallery. How they are formed and how they are used.
 
 ## Pipeline
 
@@ -41,7 +47,7 @@ ReversePipelineBuilder.Create()
 
 Pipelines can also reference a `DataId`, if collecting the data takes a while. E.g. for collecting statistical information from simulating millions of games. 
 
-An example of a pipeline using a `DataId` is below or on [GitHub](https://github.com/b-faze/faze/blob/55354ea577aad7631b826b52d3a8ae8a6f46446b/src/examples/gallery/Faze.Examples.Gallery/Visualisations/EightQueensProblem/EightQueensProblemImagePipeline.cs).
+An example of a pipeline using a `DataId` is below ([GitHub](https://github.com/b-faze/faze/blob/55354ea577aad7631b826b52d3a8ae8a6f46446b/src/examples/gallery/Faze.Examples.Gallery/Visualisations/EightQueensProblem/EightQueensProblemImagePipeline.cs))
 
 ```
 ReversePipelineBuilder.Create()
@@ -62,7 +68,7 @@ ReversePipelineBuilder.Create()
     .Build(() => new PiecesBoardState(new PiecesBoardStateConfig(BoardSize, new QueenPiece(), onlySafeMoves: true)));
 ```
 
-Currently, there is no link to a data pipeline from the gallery.
+Currently, there is no link to a data pipeline from the gallery, but there will be in the future.
 
 ## Variations
 
@@ -98,8 +104,12 @@ By clicking an image's information button you are able to see a breakdown of the
 
  ![Gallery Image Info](/assets/images/faze-gallery-img-info.png)
 
- # Custom Metadata in thumbsup
+# Future plans
 
- [thumbsup](https://thumbsup.github.io/) only supports a predefined set of metadata properties on an image. These properties reflect information provided by a camera - E.g. location the image was taken. 
- 
- One option would be to use one of these known properties to set the data we want 
+The faze gallery is intended to be a way of quickly browsing the visualisations, to document what is going on and serve as a reproducible example. Progress has been made against the first and last targets so the next focus will be improving the explanation. 
+
+Some ideas so far:
+- Add a description for an image
+- Add the colour scale used
+- Album descriptions (for game, pipeline and variation)
+- Add interactive zooming (may need to move away from a static gallery)
