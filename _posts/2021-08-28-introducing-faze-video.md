@@ -4,7 +4,7 @@ title: "Introducing Faze Video"
 description: "A new Faze.Rendering.Video.FFMPEG library"
 date: 2021-08-28 10:00:00 -0000
 categories: projects faze
-tags: ffmpeg
+tags: dev ffmpeg
 excerpt_separator: <!--excerpt-->
 ---
 

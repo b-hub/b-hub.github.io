@@ -4,7 +4,7 @@ title: "GitHub pages with Jekyll"
 description: "Creating this site with GitHub pages and Jekyll"
 date: 2021-07-30 12:00:00 -0000
 categories: projects b-hub.github.io
-tags: jekyll how-to
+tags: dev jekyll how-to
 excerpt_separator: <!--excerpt-->
 ---
 

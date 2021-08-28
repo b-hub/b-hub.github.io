@@ -4,7 +4,7 @@ title: "Faze Gallery Improvements"
 description: "Adding more information"
 date: 2021-08-27 12:00:00 -0000
 categories: projects faze
-tags: thumbsup
+tags: dev thumbsup
 excerpt_separator: <!--excerpt-->
 ---
 
