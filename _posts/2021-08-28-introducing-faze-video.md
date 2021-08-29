@@ -1,5 +1,7 @@
 ---
 layout: default
+monthly_highlight: true
+highlight_banner_url: /assets/images/faze-video-banner.gif
 title: "Introducing Faze Video"
 description: "A new Faze.Rendering.Video.FFMPEG library"
 date: 2021-08-28 10:00:00 -0000

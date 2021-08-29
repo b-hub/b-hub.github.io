@@ -58,7 +58,7 @@ Runs a shell process in the docker container, along with the command issued to i
 
 From here you can play around with the theme and read more about it in the [thumbsup documentation](https://thumbsup.github.io/docs/4-themes/create/).
 
-# Custom Metadata in thumbsup
+# Custom Metadata
 
  The [thumbsup data model](https://thumbsup.github.io/docs/4-themes/data-model/) only supports a predefined set of metadata properties for an image. 
  
@@ -191,3 +191,9 @@ I then added the following div to thumbnail.hbs:
 Renders a partial with the file's metadata as the context.
 
 You can see the full code [here](https://github.com/b-faze/faze/tree/master/src/pages/theme).
+
+# Conclusion
+
+Creating a custom theme and using (abusing) the settings file has allowed the gallery to be improved while staying within thumbsup. 
+
+In the future it would be worth trying to return the gallery to being more coherent with thumbsup, however the implementation still isn't too crazy.
