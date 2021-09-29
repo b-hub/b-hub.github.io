@@ -21,7 +21,7 @@ Having spent nearly 28 years learning you would think I’d have some sort of pr
 
 This post is a reflection on the answers I gave, as well as questioning if it is possible to have a general learning process (for myself). I would also like to clarify that the interpretation of the question and my answers are specific to me. Nevertheless, I hope you find some parallels or the topic sparks some interest!
 
-## My answer
+## My Answer
 
 >I did some initial research by watching tutorials before I had my first lesson. It had the benefit of understanding general concepts, gaining some intuition about how it should be done and potential issues which could trip me up.
 >
