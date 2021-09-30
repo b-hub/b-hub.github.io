@@ -8,7 +8,7 @@ tags: learning skills
 excerpt_separator: <!--excerpt-->
 ---
 
-In a previous post [Learning a new skill](), I reflected on my learning process and concluded there are two important aspects - setting a concrete goal and making sure you stay motivated enough to achieve it. In order to satisfy both aspects, it helps to know the steps in order to achieve the goal. This will give you a good idea of the effort involved and to set expectations. Trying to distill acquiring a skill into a set of steps is not uncommon to those familiar with skill trees in games. In this post, I try to formalise the progression in snowboarding, visualising it as a skill tree. 
+In a previous post [Learning a new skill](/general/2021/09/29/learning-a-new-skill.html), I reflected on my learning process and concluded there are two important aspects - setting a concrete goal and making sure you stay motivated enough to achieve it. In order to satisfy both aspects, it helps to know the steps in order to achieve the goal. This will give you a good idea of the effort involved and to set expectations. Trying to distill acquiring a skill into a set of steps is not uncommon to those familiar with skill trees in games. In this post, I try to formalise the progression in snowboarding, visualising it as a skill tree. 
 
 <!--excerpt-->
 
