@@ -12,7 +12,7 @@ In a previous post [Learning a new skill](), I reflected on my learning process 
 
 <!--excerpt-->
 
-# Skill trees
+# Skill Trees
 
 I will give a quick TLDR here, but there is already a great article, [Skill Tree Principle - An Innovative way to grow your skills efficiently](https://medium.com/skilluped/the-skill-tree-principle-an-innovative-way-to-grow-your-skills-efficiently-7e6287e0748e), which goes into detail explaining skill trees and applying them to real life skills.
 
@@ -20,7 +20,7 @@ A skill tree is used as a form of progression in games. It is a visual represent
 
 When applying a skill tree to real life “progression”, abilities are skills, like being able to do a backflip. To unlock the backflip skill you will first need the skills: jump, core strength, ariel awareness, (fearlessness), etc… The real life parallel to a skill point would be time spent practising.
 
-# Snowboarding skill tree
+# Snowboarding Skill Tree
 
 ### Goals
 Shows what is possible
@@ -132,9 +132,9 @@ Designing a skill tree in this way leans more towards understanding and document
 
 Contrary to in-game skills, in the real world skills are more interconnected. For the sake of readibility, some connections may need to be left out. [Skill Tree Principle - An Innovative way to grow your skills efficiently](https://medium.com/skilluped/the-skill-tree-principle-an-innovative-way-to-grow-your-skills-efficiently-7e6287e0748e) gets around this by keeping the skill trees smaller and more focused.
 
-All in all, I like the result and found the process itself helpful. I would like to see further steps added, maybe trying out some force directed graphs. There are plenty of descriptions of snowboarding competencies, it would be interesting to see if they can be mapped to the skill tree. 
+All in all, I like the result and found the process itself helpful (Give it a go yourself if you have the time!). I would like to see further steps added, maybe trying out some force directed graphs. There are plenty of descriptions of snowboarding competencies, it would be interesting to see if they can be mapped to the skill tree. 
 
-### Examples
+### Other examples
 
 - [Dungeons and Developers](http://www.dungeonsanddevelopers.com/)
 - [SkillTree](https://skilltree-b6bba.firebaseapp.com/about)
