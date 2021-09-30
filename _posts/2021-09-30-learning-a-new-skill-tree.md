@@ -92,6 +92,8 @@ The tree now includes intermediate steps like *Mountain*, *Training slope* and *
 
 ![full locked skill tree](/assets/images/snowboarding-full-locked-skill-tree.svg)
 
+[Full size](/assets/images/snowboarding-full-locked-skill-tree.svg)
+
 There is still a lot more I can add, especially the tricks. More advanced tricks will require several smaller techniques, which will end up making the tree a web of edges and very hard to read. It may be impossible to create a skill tree that satisfies everything we want. At some point there is a trade off between readability and verboseness.
 
 | Goal | Achieved? |
@@ -110,6 +112,8 @@ There is still a lot more I can add, especially the tricks. More advanced tricks
 ## Including progress
 
 ![full unlocked skill tree](/assets/images/snowboarding-full-unlocked-skill-tree.svg)
+
+[Full size](/assets/images/snowboarding-full-unlocked-skill-tree.svg)
 
 In terms of my own development the tree shows at a glance how far I have come and some immediate next goals to set. It also helps to illustrate how diverse the subject is. If it was possible to create a standard skill tree, it may also be useful for comparing two people’s abilities. 
 
