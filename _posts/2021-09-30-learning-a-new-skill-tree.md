@@ -1,15 +1,16 @@
 ---
 layout: default
+monthly_highlight: true
+highlight_banner_url: /assets/images/snowboarding-full-locked-skill-tree.svg
 title: "Learning a New Skill (Tree)"
 description: "Designing a snowboarding skill tree"
 date: 2021-09-30 12:00:00 -0000
 categories: general
 tags: learning skills
-highlight_banner_url: /assets/images/snowboarding-full-locked-skill-tree.svg
 excerpt_separator: <!--excerpt-->
 ---
 
-In a previous post [Learning a new skill](/general/2021/09/29/learning-a-new-skill.html), I reflected on my learning process and concluded there are two important aspects - setting a concrete goal and making sure you stay motivated enough to achieve it. In order to satisfy both aspects, it helps to know the steps in order to achieve the goal. This will give you a good idea of the effort involved and to set expectations. Trying to distill acquiring a skill into a set of steps is not uncommon to those familiar with skill trees in games. In this post, I try to formalise the progression in snowboarding, visualising it as a skill tree. 
+In a previous post [Learning a new skill](/general/2021/09/29/learning-a-new-skill.html), I reflected on my learning process and concluded there are two important aspects - setting a concrete goal and making sure you stay motivated enough to achieve it. In order to satisfy both aspects, it helps to know the steps in order to achieve the goal. This will give you a good idea of the effort involved and to set expectations. Trying to distil acquiring a skill into a set of steps is not uncommon to those familiar with skill trees in games. In this post, I try to formalise the progression in snowboarding, visualising it as a skill tree. 
 
 <!--excerpt-->
 
@@ -107,7 +108,7 @@ There is still a lot more I can add, especially the tricks. More advanced tricks
 | Current progression at a glance                                             | ❌  |
 
 *Much more to snowboarding!
-**Requires ballancing with readability
+**Requires balancing with readability
 
 
 ## Including progress
@@ -128,14 +129,14 @@ In terms of my own development the tree shows at a glance how far I have come an
 | Current progression at a glance                                             | ✔️  |
 
 *Much more to snowboarding!
-**Requires ballancing with readability
+**Requires balancing with readability
 
 
 # Conclusion
 
-Designing a skill tree in this way leans more towards understanding and documenting a skill or topic. It is great for visualising long-term progression and choosing sensible goals. However, there are quite a lot of caviats. Without a tool, creating and organising a skill tree of this size takes a lot of time. There are a couple of tools available, the [ones dedicated to skill trees](https://github.com/andrico1234/beautiful-skill-tree#examples) do not currently support the level of complexity shown here. Generic graphing tools like D3 would however be able to handle visualising the tree as a [force directed graph](https://observablehq.com/@d3/force-directed-graph). You can also leverage [3D visualisations](https://vasturiano.github.io/3d-force-graph/example/basic/) for the extra degree of freedom. 
+Designing a skill tree in this way leans more towards understanding and documenting a skill or topic. It is great for visualising long-term progression and choosing sensible goals. However, there are quite a lot of caveats. Without a tool, creating and organising a skill tree of this size takes a lot of time. There are a couple of tools available, the [ones dedicated to skill trees](https://github.com/andrico1234/beautiful-skill-tree#examples) do not currently support the level of complexity shown here. Generic graphing tools like D3 would however be able to handle visualising the tree as a [force directed graph](https://observablehq.com/@d3/force-directed-graph). You can also leverage [3D visualisations](https://vasturiano.github.io/3d-force-graph/example/basic/) for the extra degree of freedom. 
 
-Contrary to in-game skills, in the real world skills are more interconnected. For the sake of readibility, some connections may need to be left out. [Skill Tree Principle - An Innovative way to grow your skills efficiently](https://medium.com/skilluped/the-skill-tree-principle-an-innovative-way-to-grow-your-skills-efficiently-7e6287e0748e) gets around this by keeping the skill trees smaller and more focused.
+Contrary to in-game skills, in the real world skills are more interconnected. For the sake of readability, some connections may need to be left out. [Skill Tree Principle - An Innovative way to grow your skills efficiently](https://medium.com/skilluped/the-skill-tree-principle-an-innovative-way-to-grow-your-skills-efficiently-7e6287e0748e) gets around this by keeping the skill trees smaller and more focused.
 
 All in all, I like the result and found the process itself helpful (Give it a go yourself if you have the time!). I would like to see further steps added, maybe trying out some force directed graphs. There are plenty of descriptions of snowboarding competencies, it would be interesting to see if they can be mapped to the skill tree. 
 
