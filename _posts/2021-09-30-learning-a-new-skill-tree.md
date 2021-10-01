@@ -5,6 +5,7 @@ description: "Designing a snowboarding skill tree"
 date: 2021-09-30 12:00:00 -0000
 categories: general
 tags: learning skills
+highlight_banner_url: /assets/images/snowboarding-full-locked-skill-tree.svg
 excerpt_separator: <!--excerpt-->
 ---
 
